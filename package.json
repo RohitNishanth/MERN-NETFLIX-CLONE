@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "NODE_ENV=development node --watch backend/server.js",
     "start": "NODE_ENV=production node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && mv frontend/build backend/public",
-
-
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix "
   },
   "keywords": [],
   "author": "",
   "type": "module",
-
   "license": "ISC",
   "description": "",
   "dependencies": {
