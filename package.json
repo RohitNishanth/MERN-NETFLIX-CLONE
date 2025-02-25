@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development node --watch backend/server.js",
     "start": "NODE_ENV=production node backend/server.js",
-    "build": "cd frontend && npm install && npm run build",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix "
   },
   "keywords": [],
   "author": "",
@@ -21,8 +20,5 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.1"
   }
 }
